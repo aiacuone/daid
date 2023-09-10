@@ -4,6 +4,19 @@
 	import { localLinks } from '../links';
 	import DaidLight from '$lib/svgs/DaidLight.svelte';
 	import '../global.css';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		const onResize = () => {
+			document.body.style.height = window.innerHeight + 'px';
+		};
+
+		window.addEventListener('resize', onResize);
+
+		return () => {
+			window.removeEventListener('resize', onResize);
+		};
+	});
 </script>
 
 <div class="h-screen w-screen stack bg-gray-100">
