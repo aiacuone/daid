@@ -14,7 +14,7 @@
 		<div class="flex-1 hidden sm:flex" />
 		<div class="gap-6 hidden sm:flex">
 			{#each localLinks as link}
-				<a href={link.path} class="text-xl text-white center">{link.label}</a>
+				<a href={link.path} class="text-xl text-white center uppercase">{link.label}</a>
 			{/each}
 		</div>
 	</div>
