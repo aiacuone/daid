@@ -2,4 +2,4 @@
 	import '../global.css';
 </script>
 
-<h1 class="text-5xl text-red-500">this is daid</h1>
+<h1 class="text-5xl">this is daid</h1>
