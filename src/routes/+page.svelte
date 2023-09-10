@@ -1,6 +1,6 @@
 <script lang="ts">
 	import DaidDark from '$lib/svgs/DaidDark.svelte';
-	import '../global.css';
+
 	import { localLinks } from '../links';
 </script>
 

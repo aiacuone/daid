@@ -3,6 +3,7 @@
 	import Icon from '@iconify/svelte';
 	import { localLinks } from '../links';
 	import DaidLight from '$lib/svgs/DaidLight.svelte';
+	import '../global.css';
 </script>
 
 <div class="h-screen w-screen stack bg-gray-100">
