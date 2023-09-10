@@ -10,5 +10,9 @@ export const localLinks = [
 	{
 		label: 'Contact',
 		path: '/page/contact'
+	},
+	{
+		label: 'Careers',
+		path: '/page/careers'
 	}
 ];

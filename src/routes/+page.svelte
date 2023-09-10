@@ -4,7 +4,7 @@
 	import { localLinks } from '../links';
 </script>
 
-<div class="stack center gap-3">
+<div class="stack center gap-6">
 	<div class="hidden sm:flex">
 		<DaidDark height="50px" />
 	</div>
@@ -14,7 +14,7 @@
 				i === 0 ? 'rounded-t-3xl' : i === localLinks.length - 1 ? 'rounded-b-3xl' : ''}
 			<a
 				href={link.path}
-				class="bg-gray-300 h-[40px] sm:h-[45px] w-[150px] sm:w-[200px] center {rounded} text-md sm:text-xl"
+				class="bg-gray-200 h-[40px] sm:h-[40px] w-[150px] sm:w-[200px] center {rounded} text-md sm:text-xl outline outline-gray-300"
 				>{link.label}</a
 			>
 		{/each}

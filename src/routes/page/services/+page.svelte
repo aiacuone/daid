@@ -4,7 +4,9 @@
 		'Business Consulting and strategy',
 		'digital Services',
 		'Real Estate and Maintenance',
-		'Finance and Operational Services (all sectors and sizes)'
+		'Finance and Operational Services (all sectors and sizes)',
+		'Management, Communications and Training',
+		'Project Management'
 	];
 </script>
 
