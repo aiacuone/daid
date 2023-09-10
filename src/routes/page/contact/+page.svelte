@@ -1,10 +1,30 @@
-<p>
-	Contact text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur, augue sed
-	semper blandit, dui tortor laoreet urna, vel cursus tortor purus at lorem. In tempus lacus id
-	felis consectetur lacinia. Etiam condimentum faucibus tempus. Aenean ex est, scelerisque quis
-	ullamcorper eu, auctor interdum dolor. In sit amet ligula et velit fermentum tincidunt.
-	Pellentesque maximus libero at massa maximus consectetur. Curabitur elementum arcu in faucibus
-	euismod. Sed nisl ex, porttitor sit amet suscipit ac, semper eget dui. Integer ultrices nunc nec
-	dui eleifend tincidunt. Nunc porta, velit id semper finibus, erat urna tempus dui, nec gravida
-	purus ligula ac ex.
-</p>
+<script lang="ts">
+	import { icons } from '$lib';
+	import Icon from '@iconify/svelte';
+
+	const socials = [
+		{
+			label: 'linkedin',
+			link: 'https://www.linkedin.com/in/dahyad/?originalSubdomain=uk',
+			icon: icons.linkedin
+		},
+		{
+			label: 'instagram',
+			link: 'https://www.instagram.com/dipi_d/?hl=en',
+			icon: icons.instagram
+		},
+		{
+			label: 'tiktok',
+			link: 'https://www.tiktok.com/@dipzlikechipz_',
+			icon: icons.tiktok
+		}
+	];
+</script>
+
+<div class="hstack gap-6">
+	{#each socials as social}
+		<a href={social.link} target="_blank" class="center h-[35px] sm:h-[50px]">
+			<Icon icon={social.icon} height="100%" />
+		</a>
+	{/each}
+</div>
