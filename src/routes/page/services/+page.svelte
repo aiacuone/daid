@@ -1,11 +1,10 @@
 <script lang="ts">
 	const services = [
 		'Business Transformation',
-		'Business Consulting and strategy',
-		'digital Services',
+		'Business Consulting and Strategy',
+		'Digital Services',
 		'Real Estate and Maintenance',
-		'Finance and Operational Services (all sectors and sizes)',
-		'Management, Communications and Training',
+		'Change Management, Communications and Training',
 		'Project Management'
 	];
 </script>
@@ -15,6 +14,7 @@
 		<li>{service}</li>
 	{/each}
 </ul>
+<p>We cater to all sectors and sizes</p>
 
 <style>
 	li {
