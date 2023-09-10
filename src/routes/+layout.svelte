@@ -7,7 +7,7 @@
 
 <div class="h-screen w-screen stack bg-gray-100">
 	<!-- HEADER -->
-	<div class="w-full bg-neutral-800 hstack py-2 px-10">
+	<div class="w-full hstack py-2 px-10 header">
 		<div class=" flex-1 sm:flex-none center">
 			<a href="/" class="rounded-md center"><DaidLight height="40px" /></a>
 		</div>
@@ -22,7 +22,7 @@
 		<slot />
 	</div>
 	<!-- FOOTER -->
-	<div class="w-full bg-neutral-800 hstack py-2 px-10 justify-center sm:justify-start">
+	<div class="w-full hstack py-2 px-10 justify-center sm:justify-start footer">
 		<div class="hstack gap-5">
 			<a href="https://www.linkedin.com/in/dahyad/?originalSubdomain=uk" target="_blank">
 				<Icon icon={icons.linkedin} height="30px" />
@@ -36,3 +36,10 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	.header,
+	.footer {
+		background-color: #34224c;
+	}
+</style>
