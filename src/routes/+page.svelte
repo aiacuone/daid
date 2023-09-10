@@ -1,10 +1,11 @@
 <script lang="ts">
+	import DaidDark from '$lib/svgs/DaidDark.svelte';
 	import '../global.css';
 	import { localLinks } from '../links';
 </script>
 
 <div class="stack center gap-3">
-	<h1 class="text-4xl">:DAID</h1>
+	<DaidDark height="50px" />
 	<div class="flex flex-col gap-2">
 		{#each localLinks as link, i}
 			{@const rounded =
