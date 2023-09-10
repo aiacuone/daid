@@ -1,12 +1,15 @@
 <script lang="ts">
 	import '../global.css';
+	import { localLinks } from '../links';
 </script>
 
 <div class="stack center gap-3">
 	<h1 class="text-4xl">:DAID</h1>
-	<div class="flex flex-col sm:flex-row gap-2">
-		<a href="/about" class="bg-gray-300 py-2 px-8 rounded-md">About</a>
-		<a href="/services" class="bg-gray-300 py-2 px-8 rounded-md">Services</a>
-		<a href="/contact" class="bg-gray-300 py-2 px-8 rounded-md">Contact</a>
+	<div class="flex flex-col gap-2">
+		{#each localLinks as link, i}
+			{@const rounded =
+				i === 0 ? 'rounded-t-2xl' : i === localLinks.length - 1 ? 'rounded-b-2xl' : ''}
+			<a href={link.path} class="bg-gray-300 py-[4px] w-[150px] center {rounded}">{link.label}</a>
+		{/each}
 	</div>
 </div>
