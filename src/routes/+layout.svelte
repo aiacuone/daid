@@ -4,23 +4,9 @@
 	import { localLinks } from '../links';
 	import DaidLight from '$lib/svgs/DaidLight.svelte';
 	import '../global.css';
-	import { onMount } from 'svelte';
-
-	let rootContainerHeight;
-	onMount(() => {
-		const onResize = () => {
-			rootContainerHeight = window.innerHeight;
-		};
-
-		window.addEventListener('resize', onResize);
-		onResize();
-		return () => {
-			window.removeEventListener('resize', onResize);
-		};
-	});
 </script>
 
-<div class="h-screen w-screen stack bg-gray-100" bind:clientHeight={rootContainerHeight}>
+<div class="h-screen w-screen stack bg-gray-100">
 	<!-- HEADER -->
 	<div class="w-full hstack py-2 px-10 header">
 		<div class=" flex-1 sm:flex-none center">

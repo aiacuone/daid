@@ -10,7 +10,7 @@
 		},
 		{
 			label: 'instagram',
-			link: 'https://www.instagram.com/dipi_d/?hl=en',
+			link: 'https://www.instagram.com/dip_age/',
 			icon: icons.instagram
 		},
 		{
