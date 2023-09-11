@@ -3,7 +3,7 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<div class="hstack gap-6">
+<div class="hstack gap-6 center">
 	{#each socialLinks as social}
 		<a href={social.url} target="_blank" class="center h-[35px]">
 			<Icon icon={social.icon} height="100%" />
