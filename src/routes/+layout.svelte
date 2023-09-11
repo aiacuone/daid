@@ -1,16 +1,17 @@
 <script lang="ts">
-	import { icons } from '$lib';
 	import Icon from '@iconify/svelte';
-	import { localLinks } from '../links';
+
 	import DaidLight from '$lib/svgs/DaidLight.svelte';
 	import '../global.css';
+	import { socialLinks } from '$lib/common/socialLinks';
+	import { localLinks } from '$lib/common/links';
 </script>
 
 <div class="h-screen w-screen bg-gray-100 stack" style={'max-height:dvh'}>
 	<!-- HEADER -->
-	<div class="w-full hstack py-2 px-10 header">
+	<div class="w-full hstack h-[80px] px-10 header">
 		<div class=" flex-1 sm:flex-none center">
-			<a href="/" class="rounded-md center"><DaidLight height="40px" /></a>
+			<a href="/" class="rounded-md center h-[30px] sm:h-[40px]"><DaidLight height="100%" /></a>
 		</div>
 		<div class="flex-1 hidden sm:flex" />
 		<div class="gap-6 hidden sm:flex">
@@ -19,21 +20,17 @@
 			{/each}
 		</div>
 	</div>
-	<div class="flex-1 center p-4">
+	<div class="flex-1 center p-0 sm:p-4">
 		<slot />
 	</div>
 	<!-- FOOTER -->
-	<div class="w-full hstack py-2 px-10 justify-center sm:justify-start footer">
+	<div class="w-full hstack h-[80px] px-10 center sm:justify-start footer">
 		<div class="hstack gap-5">
-			<a href="https://www.linkedin.com/in/dahyad/?originalSubdomain=uk" target="_blank">
-				<Icon icon={icons.linkedin} height="30px" />
-			</a>
-			<a href="https://www.instagram.com/dipi_d/?hl=en" target="_blank">
-				<Icon icon={icons.instagram} height="30px" />
-			</a>
-			<a href="https://www.tiktok.com/@dipzlikechipz_" target="_blank">
-				<Icon icon={icons.tiktok} height="30px" />
-			</a>
+			{#each socialLinks as social}
+				<a href={social.url} target="_blank" class="center h-[30px]">
+					<Icon icon={social.icon} height="100%" />
+				</a>
+			{/each}
 		</div>
 	</div>
 </div>
@@ -46,5 +43,10 @@
 
 	.header {
 		font-family: Allerta Stencil, sans-serif;
+		filter: drop-shadow(0px 10px 5px rgb(190, 190, 190));
+	}
+
+	.footer {
+		filter: drop-shadow(0px -10px 5px rgb(190, 190, 190));
 	}
 </style>

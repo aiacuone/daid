@@ -5,7 +5,8 @@
 		'Digital Services',
 		'Real Estate and Maintenance',
 		'Change Management, Communications and Training',
-		'Project Management'
+		'Project Management',
+		'Data Analytics and Insights'
 	];
 </script>
 

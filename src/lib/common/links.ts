@@ -1,18 +1,18 @@
 export const localLinks = [
 	{
 		label: 'About',
-		path: '/page/about'
+		path: '/about'
 	},
 	{
 		label: 'Services',
-		path: '/page/services'
+		path: '/services'
 	},
 	{
 		label: 'Contact',
-		path: '/page/contact'
+		path: '/contact'
 	},
 	{
 		label: 'Careers',
-		path: '/page/careers'
+		path: '/careers'
 	}
 ];
