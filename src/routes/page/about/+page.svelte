@@ -3,7 +3,7 @@ disciplines:
 
 <ol class="my-1">
 	<li>Accounting & Finance</li>
-	<li>Commercial Law</li>
+	<li>Commercial Law and Taxation</li>
 	<li>Employment Relations</li>
 	<li>Mechanical and Electrical Engineering</li>
 	<li>Digital Services and Business Transformation</li>

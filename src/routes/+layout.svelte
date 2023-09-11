@@ -9,7 +9,7 @@
 	let rootContainerHeight;
 	onMount(() => {
 		const onResize = () => {
-			rootContainerHeight = window.innerHeight + 'px';
+			rootContainerHeight = window.innerHeight;
 		};
 
 		window.addEventListener('resize', onResize);
