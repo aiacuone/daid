@@ -6,9 +6,10 @@
 	import '../global.css';
 	import { onMount } from 'svelte';
 
+	let rootContainerHeight;
 	onMount(() => {
 		const onResize = () => {
-			document.body.style.height = window.innerHeight + 'px';
+			rootContainerHeight = window.innerHeight + 'px';
 		};
 
 		window.addEventListener('resize', onResize);
@@ -19,7 +20,7 @@
 	});
 </script>
 
-<div class="h-screen w-screen stack bg-gray-100">
+<div class="h-screen w-screen stack bg-gray-100" bind:clientHeight={rootContainerHeight}>
 	<!-- HEADER -->
 	<div class="w-full hstack py-2 px-10 header">
 		<div class=" flex-1 sm:flex-none center">
