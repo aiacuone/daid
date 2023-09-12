@@ -2,20 +2,23 @@
 	const services = [
 		'Business Transformation',
 		'Business Consulting and Strategy',
-		'Digital Services',
+		'Digital Services and Artificial Intelligence (AI)',
 		'Real Estate and Maintenance',
 		'Change Management, Communications and Training',
 		'Project Management',
-		'Data Analytics and Insights'
+		'Data Analytics and Insights',
+		'Mergers and Aquisitions'
 	];
 </script>
 
-<ul>
-	{#each services as service}
-		<li>{service}</li>
-	{/each}
-</ul>
-<p>We cater to all sectors and sizes</p>
+<div class="stack gap-4">
+	<ul>
+		{#each services as service}
+			<li>{service}</li>
+		{/each}
+	</ul>
+	<p>We cater to <i>all sectors and sizes</i></p>
+</div>
 
 <style>
 	li {

@@ -25,21 +25,25 @@
 		<slot />
 	</div>
 	<!-- FOOTER -->
-	<div class="w-full hstack px-10 center sm:justify-start footer py-3">
-		<div class="stack gap-5">
-			<a
-				href="/"
-				class="flex sm:hidden center self-center bg-white bg-opacity-10 py-1 px-2 rounded-md"
-			>
-				<Icon icon={icons.hamburger} height="40px" color="white" />
-			</a>
-			<div class="hstack gap-6">
-				{#each socialLinks as social}
-					<a href={social.url} target="_blank" class="center h-[20px]">
-						<Icon icon={social.icon} height="100%" />
-					</a>
-				{/each}
-			</div>
+	<div class="w-full flex-col sm:flex-row px-10 center sm:justify-start footer py-3 gap-4">
+		<a
+			href="/"
+			class="flex sm:hidden center self-center bg-white bg-opacity-10 py-1 px-2 rounded-md"
+		>
+			<Icon icon={icons.hamburger} height="40px" color="white" />
+		</a>
+
+		<div class="hstack gap-8 flex-1">
+			{#each socialLinks as social}
+				<a href={social.url} target="_blank" class="center h-[30px]">
+					<Icon icon={social.icon} height="100%" color="white" />
+				</a>
+			{/each}
+		</div>
+		<div class="flex-1">
+			<p class="text-white text-right text-xs sm:text-sm">
+				:Daid Limited © {`${new Date().getFullYear()}`}
+			</p>
 		</div>
 	</div>
 </div>
@@ -49,14 +53,15 @@
 	.footer {
 		background-color: #372b48;
 		min-height: 80px;
+		z-index: 2;
 	}
 
 	.header {
 		font-family: Allerta Stencil, sans-serif;
-		filter: drop-shadow(0px 10px 5px rgb(190, 190, 190));
+		filter: drop-shadow(0px 7px 5px rgb(201, 201, 201));
 	}
 
 	.footer {
-		filter: drop-shadow(0px -10px 5px rgb(190, 190, 190));
+		filter: drop-shadow(0px -7px 5px rgb(202, 202, 202));
 	}
 </style>
