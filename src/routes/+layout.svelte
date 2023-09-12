@@ -26,13 +26,16 @@
 	</div>
 	<!-- FOOTER -->
 	<div class="w-full hstack px-10 center sm:justify-start footer py-3">
-		<div class="stack gap-3">
-			<a href="/" class="flex sm:hidden center self-center">
-				<Icon icon={icons.hamburger} height="30px" color="white" />
+		<div class="stack gap-5">
+			<a
+				href="/"
+				class="flex sm:hidden center self-center bg-white bg-opacity-10 py-1 px-2 rounded-md"
+			>
+				<Icon icon={icons.hamburger} height="40px" color="white" />
 			</a>
 			<div class="hstack gap-6">
 				{#each socialLinks as social}
-					<a href={social.url} target="_blank" class="center h-[25px]">
+					<a href={social.url} target="_blank" class="center h-[20px]">
 						<Icon icon={social.icon} height="100%" />
 					</a>
 				{/each}
