@@ -57,10 +57,13 @@
 		</div>
 	</div>
 </div>
-<dialog bind:this={qrCodeModal} class="min-h-[300px] stack w-full center gap-3">
-	<p>This is the modal</p>
-	<div class="self-center">
-		<Button onClick={() => qrCodeModal.close()}>Close</Button>
+
+<dialog bind:this={qrCodeModal} class="w-full">
+	<div class="stack w-full center gap-3 min-h-[300px]">
+		<p>This is the modal</p>
+		<div class="self-center">
+			<Button onClick={() => qrCodeModal.close()}>Close</Button>
+		</div>
 	</div>
 </dialog>
 
