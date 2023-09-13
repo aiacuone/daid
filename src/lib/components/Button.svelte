@@ -11,8 +11,8 @@
 	class="hstack items-center gap-2 _drop-shadow center px-10 py-2 rounded-md bg-white w-full min-w-[170px]"
 >
 	{#if icon}
-		<div class="h-[{iconHeight}] opacity-{iconOpacity}">
-			<Icon {icon} height="100%" color={iconColor} />
+		<div class="opacity-{iconOpacity}">
+			<Icon {icon} height={iconHeight} color={iconColor} />
 		</div>
 	{/if}
 	<slot />
