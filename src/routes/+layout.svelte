@@ -5,7 +5,7 @@
 	import '../global.css';
 	import { socialLinks } from '$lib/common/socialLinks';
 	import { localLinks } from '$lib/common/localLinks';
-	import { icons } from '$lib';
+	import { icons } from '$lib/common/icons';
 </script>
 
 <div class="h-screen w-screen stack" style={'max-height:dvh'}>

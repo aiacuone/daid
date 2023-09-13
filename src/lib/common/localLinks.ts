@@ -1,4 +1,4 @@
-import { icons } from '$lib/icons';
+import { icons } from '$lib/common/icons';
 
 export const localLinks = [
 	{

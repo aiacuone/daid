@@ -1,4 +1,4 @@
-import { icons } from '$lib';
+import { icons } from './icons';
 
 export const socialLinks = [
 	{
