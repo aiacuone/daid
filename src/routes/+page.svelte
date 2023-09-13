@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { localLinks } from '$lib/common/links';
+	import { localLinks } from '$lib/common/localLinks';
 	import DaidDark from '$lib/svgs/DaidDark.svelte';
 </script>
 
 <div class="stack center gap-6">
 	<div class="hidden sm:flex">
-		<DaidDark height="50px" />
+		<DaidDark height="30px" />
 	</div>
 	<div class="flex flex-col gap-3 sm:gap-4">
 		{#each localLinks as link, i}

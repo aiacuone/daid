@@ -14,5 +14,9 @@ export const localLinks = [
 	{
 		label: 'Careers',
 		path: '/careers'
+	},
+	{
+		label: 'Fees',
+		path: '/fees'
 	}
 ];

@@ -5,19 +5,17 @@
 
 <div class="stack gap-6">
 	{#each socialLinks as social}
-		<div class="hstack items-center gap-2">
-			<a href={social.url} target="_blank" class="center h-[30px] social-link">
+		<a
+			href={social.url}
+			target="_blank"
+			class="hstack items-center gap-2 _drop-shadow center px-10 py-2 rounded-md bg-white"
+		>
+			<div class="center h-[30px]">
 				<Icon icon={social.icon} height="100%" />
-			</a>
+			</div>
 			<p>
 				{social.label}
 			</p>
-		</div>
+		</a>
 	{/each}
 </div>
-
-<style>
-	.social-link {
-		filter: drop-shadow(5px 1px 3px rgb(230, 230, 230));
-	}
-</style>

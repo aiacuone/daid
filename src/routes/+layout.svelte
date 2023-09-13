@@ -4,20 +4,20 @@
 	import DaidLight from '$lib/svgs/DaidLight.svelte';
 	import '../global.css';
 	import { socialLinks } from '$lib/common/socialLinks';
-	import { localLinks } from '$lib/common/links';
+	import { localLinks } from '$lib/common/localLinks';
 	import { icons } from '$lib';
 </script>
 
-<div class="h-screen w-screen bg-gray-100 stack" style={'max-height:dvh'}>
+<div class="h-screen w-screen stack" style={'max-height:dvh'}>
 	<!-- HEADER -->
 	<div class="w-full hstack px-10 header">
 		<div class=" flex-1 sm:flex-none center">
-			<a href="/" class="rounded-md center h-[30px] sm:h-[40px]"><DaidLight height="100%" /></a>
+			<a href="/" class="rounded-md center h-[30px] sm:h-[30px]"><DaidLight height="100%" /></a>
 		</div>
 		<div class="flex-1 hidden sm:flex" />
-		<div class="gap-6 hidden sm:flex">
+		<div class="gap-4 hidden sm:flex">
 			{#each localLinks as link}
-				<a href={link.path} class="text-lg text-white center uppercase">{link.label}</a>
+				<a href={link.path} class="text-sm text-white center uppercase">{link.label}</a>
 			{/each}
 		</div>
 	</div>
@@ -33,7 +33,7 @@
 			<Icon icon={icons.hamburger} height="40px" color="white" />
 		</a>
 
-		<div class="hstack gap-5 sm:gap-8 flex-1">
+		<div class="hstack gap-5 flex-1">
 			{#each socialLinks as social}
 				<a href={social.url} target="_blank" class="center h-[30px]">
 					<Icon icon={social.icon} height="100%" color="white" />
@@ -47,6 +47,10 @@
 		</div>
 	</div>
 </div>
+
+<svelte:head>
+	<title>:Daid Ltd</title>
+</svelte:head>
 
 <style>
 	.header,
