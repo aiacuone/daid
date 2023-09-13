@@ -33,7 +33,7 @@
 			<Icon icon={icons.hamburger} height="40px" color="white" />
 		</a>
 
-		<div class="hstack gap-8 flex-1">
+		<div class="hstack gap-5 sm:gap-8 flex-1">
 			{#each socialLinks as social}
 				<a href={social.url} target="_blank" class="center h-[30px]">
 					<Icon icon={social.icon} height="100%" color="white" />

@@ -2,7 +2,7 @@ import { icons } from '$lib';
 
 export const socialLinks = [
 	{
-		label: 'Linkedin',
+		label: 'LinkedIn',
 		url: 'https://www.linkedin.com/in/dahyad/?originalSubdomain=uk',
 		icon: icons.linkedin
 	},
@@ -12,15 +12,20 @@ export const socialLinks = [
 		icon: icons.instagram
 	},
 	{
-		label: 'Tiktok',
+		label: 'TikTok',
 		url: 'https://www.tiktok.com/@dipzlikechipz_',
 		icon: icons.tiktok
 	},
 	{
-		label: '(07) 534 211 573',
-		url: 'tel:(07) 534 211 573',
-		icon: icons.phone
+		label: 'Whatsapp',
+		url: 'https://api.whatsapp.com/send?phone=07534211573',
+		icon: icons.whatsapp
 	},
+	// {
+	// 	label: '+44 07 534 211 573',
+	// 	url: 'tel:+44 07 534 211 573',
+	// 	icon: icons.whatsapp
+	// },
 	{
 		label: 'Email',
 		url: 'mailto:dahya.d@gmail.com',

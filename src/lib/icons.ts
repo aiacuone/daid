@@ -4,5 +4,6 @@ export const icons = {
 	tiktok: 'logos:tiktok-icon',
 	hamburger: 'pajamas:hamburger',
 	phone: 'solar:phone-linear',
-	email: 'fontisto:email'
+	email: 'fontisto:email',
+	whatsapp: 'logos:whatsapp-icon'
 };
