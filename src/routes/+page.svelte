@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { localLinks } from '$lib/common/localLinks';
 	import Button from '$lib/components/Button.svelte';
+	import ButtonContainer from '$lib/components/ButtonContainer.svelte';
 	import DaidDark from '$lib/svgs/DaidDark.svelte';
 	import Icon from '@iconify/svelte';
 </script>
@@ -9,7 +10,7 @@
 	<div class="hidden sm:flex">
 		<DaidDark height="30px" />
 	</div>
-	<div class="flex flex-col gap-3 sm:gap-4">
+	<ButtonContainer>
 		{#each localLinks as link}
 			<a href={link.path}>
 				<Button>
@@ -18,7 +19,7 @@
 				</Button>
 			</a>
 		{/each}
-	</div>
+	</ButtonContainer>
 </div>
 
 <!-- <div class="stack center gap-6">

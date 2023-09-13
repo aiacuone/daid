@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { socialLinks } from '$lib/common/socialLinks';
 	import Button from '$lib/components/Button.svelte';
+	import ButtonContainer from '$lib/components/ButtonContainer.svelte';
 	import Icon from '@iconify/svelte';
 </script>
 
-<div class="stack gap-6">
+<ButtonContainer>
 	{#each socialLinks as social}
 		<a href={social.url} target="_blank">
 			<Button>
@@ -17,4 +18,4 @@
 			</Button>
 		</a>
 	{/each}
-</div>
+</ButtonContainer>
