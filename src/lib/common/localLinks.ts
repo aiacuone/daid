@@ -1,22 +1,29 @@
+import { icons } from '$lib/icons';
+
 export const localLinks = [
 	{
 		label: 'About',
-		path: '/about'
+		path: '/about',
+		icon: icons.about
 	},
 	{
 		label: 'Services',
-		path: '/services'
+		path: '/services',
+		icon: icons.services
 	},
 	{
 		label: 'Contact',
-		path: '/contact'
+		path: '/contact',
+		icon: icons.contact
 	},
 	{
 		label: 'Careers',
-		path: '/careers'
+		path: '/careers',
+		icon: icons.career
 	},
 	{
 		label: 'Fees',
-		path: '/fees'
+		path: '/fees',
+		icon: icons.fees
 	}
 ];

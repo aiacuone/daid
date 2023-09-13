@@ -2,6 +2,7 @@
 	import { localLinks } from '$lib/common/localLinks';
 	import Button from '$lib/components/Button.svelte';
 	import DaidDark from '$lib/svgs/DaidDark.svelte';
+	import Icon from '@iconify/svelte';
 </script>
 
 <div class="stack center gap-6">
@@ -12,12 +13,14 @@
 		{#each localLinks as link}
 			<a href={link.path}>
 				<Button>
+					<Icon icon={link.icon} height="25px" color="rgb(220, 220, 220)" />
 					{link.label}
 				</Button>
 			</a>
 		{/each}
 	</div>
 </div>
+
 <!-- <div class="stack center gap-6">
 	<div class="hidden sm:flex">
 		<DaidDark height="30px" />

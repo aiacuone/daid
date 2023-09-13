@@ -8,7 +8,7 @@
 	{#each socialLinks as social}
 		<a href={social.url} target="_blank">
 			<Button>
-				<div class="center h-[30px]">
+				<div class="center h-[25px] opacity-90">
 					<Icon icon={social.icon} height="100%" />
 				</div>
 				<p>
