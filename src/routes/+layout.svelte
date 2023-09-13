@@ -62,10 +62,10 @@
 
 	.header {
 		font-family: Allerta Stencil, sans-serif;
-		filter: drop-shadow(0px 7px 5px rgb(201, 201, 201));
+		filter: drop-shadow(0px 5px 5px rgb(201, 201, 201));
 	}
 
 	.footer {
-		filter: drop-shadow(0px -7px 5px rgb(202, 202, 202));
+		filter: drop-shadow(0px -5px 5px rgb(202, 202, 202));
 	}
 </style>

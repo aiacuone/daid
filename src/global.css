@@ -27,7 +27,7 @@ body {
 }
 
 ._drop-shadow {
-	filter: drop-shadow(0px 3px 3px rgb(230, 230, 230));
+	filter: drop-shadow(0px 1px 2px rgb(230, 230, 230));
 }
 
 h1 {
