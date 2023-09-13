@@ -14,7 +14,7 @@
 			<td>Price based on program of work</td>
 		</tr> -->
 	</table>
-	<p>There after priced based on program of work</p>
+	<p>Thereafter priced based on program of work</p>
 	<!-- <p>Initial consultation free, there after priced based on program of work</p> -->
 </div>
 
