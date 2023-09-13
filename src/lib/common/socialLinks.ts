@@ -18,7 +18,7 @@ export const socialLinks = [
 	},
 	{
 		label: 'Whatsapp',
-		url: 'https://api.whatsapp.com/send?phone=07534211573',
+		url: 'https://api.whatsapp.com/send?phone=4407534211573',
 		icon: icons.whatsapp
 	},
 	// {
