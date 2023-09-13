@@ -34,9 +34,11 @@
 		<button
 			use:shortLongPress
 			on:short-press={() => goto('/')}
-			on:long-press={(e) => {
-				e.preventDefault();
+			on:long-press={() => {
 				qrCodeModal.showModal();
+			}}
+			on:click={(e) => {
+				e.preventDefault();
 			}}
 			class="flex sm:hidden center self-center bg-white bg-opacity-10 py-1 px-2 rounded-md"
 		>
