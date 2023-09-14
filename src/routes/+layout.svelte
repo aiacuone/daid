@@ -6,11 +6,6 @@
 	import { socialLinks } from '$lib/common/socialLinks';
 	import { localLinks } from '$lib/common/localLinks';
 	import { icons } from '$lib/common/icons';
-	import { shortLongPress } from '$lib/actions/shortLongPress';
-	import { goto } from '$app/navigation';
-	import Button from '$lib/components/Button.svelte';
-
-	let qrCodeModal: HTMLDialogElement;
 </script>
 
 <div class="h-screen w-screen stack" style={'max-height:dvh'}>
@@ -31,16 +26,12 @@
 	</div>
 	<!-- FOOTER -->
 	<div class="w-full flex-col sm:flex-row px-10 center sm:justify-start footer py-3 gap-4">
-		<div
-			use:shortLongPress
-			on:short-press={() => goto('/')}
-			on:long-press={() => {
-				qrCodeModal.showModal();
-			}}
+		<a
+			href="/"
 			class="flex sm:hidden center self-center bg-white bg-opacity-10 py-1 px-2 rounded-md"
 		>
 			<Icon icon={icons.hamburger} height="40px" color="white" />
-		</div>
+		</a>
 
 		<div class="hstack gap-5 flex-1">
 			{#each socialLinks as social}
@@ -56,15 +47,6 @@
 		</div>
 	</div>
 </div>
-
-<dialog bind:this={qrCodeModal} class="w-full">
-	<div class="stack w-full center gap-3 min-h-[300px]">
-		<p>This is the modal</p>
-		<div class="self-center">
-			<Button onClick={() => qrCodeModal.close()}>Close</Button>
-		</div>
-	</div>
-</dialog>
 
 <svelte:head>
 	<title>:Daid Ltd</title>

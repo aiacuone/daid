@@ -10,5 +10,6 @@ export const icons = {
 	services: 'entypo:tools',
 	contact: 'ph:user',
 	fees: 'material-symbols:feed-outline',
-	career: 'mdi:business-outline'
+	career: 'mdi:business-outline',
+	qrCode: 'bx:qr'
 };
