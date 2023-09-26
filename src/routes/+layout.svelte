@@ -6,11 +6,12 @@
 	import { socialLinks } from '$lib/common/socialLinks';
 	import { localLinks } from '$lib/common/localLinks';
 	import { icons } from '$lib/common/icons';
+	import Toast from '$lib/components/Toast/Toast.svelte';
 </script>
 
 <div class="h-screen w-screen stack" style={'max-height:dvh'}>
 	<!-- HEADER -->
-	<div class="w-full hstack px-10 header">
+	<div class="w-full hstack px-10 header brand-background">
 		<div class=" flex-1 sm:flex-none center">
 			<a href="/" class="rounded-md center h-[30px] sm:h-[30px]"><DaidLight height="100%" /></a>
 		</div>
@@ -25,7 +26,9 @@
 		<slot />
 	</div>
 	<!-- FOOTER -->
-	<div class="w-full flex-col sm:flex-row px-10 center sm:justify-start footer py-3 gap-4">
+	<div
+		class="w-full flex-col sm:flex-row px-10 center sm:justify-start footer py-3 gap-4 brand-background"
+	>
 		<a
 			href="/"
 			class="flex sm:hidden center self-center bg-white bg-opacity-10 py-1 px-2 rounded-md"
@@ -47,6 +50,7 @@
 		</div>
 	</div>
 </div>
+<Toast />
 
 <svelte:head>
 	<title>:Daid Ltd</title>
@@ -55,7 +59,6 @@
 <style>
 	.header,
 	.footer {
-		background-color: #372b48;
 		min-height: 80px;
 		z-index: 2;
 	}

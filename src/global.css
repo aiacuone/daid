@@ -33,3 +33,12 @@ body {
 h1 {
 	font-family: Allerta Stencil, sans-serif;
 }
+
+.brand-background {
+	background-color: #372b48;
+	color: white;
+}
+
+.brand-color {
+	color: #372b48;
+}
