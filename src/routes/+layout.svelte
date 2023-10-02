@@ -8,7 +8,7 @@
 	import { icons } from '$lib/common/icons';
 </script>
 
-<div class="h-screen w-screen stack" style={'max-height:dvh'}>
+<div class="h-[100dvh] w-screen stack">
 	<!-- HEADER -->
 	<div class="w-full hstack px-10 header">
 		<div class=" flex-1 sm:flex-none center">
