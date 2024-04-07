@@ -30,5 +30,10 @@ export const socialLinks = [
 		label: 'Email',
 		url: 'mailto:dahya.d@gmail.com',
 		icon: icons.email
+	},
+	{
+		label: 'GitHub',
+		url: 'https://aiacuone-portfolio.netlify.app/',
+		icon: icons.github
 	}
 ];

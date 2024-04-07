@@ -11,5 +11,6 @@ export const icons = {
 	contact: 'ph:user',
 	fees: 'material-symbols:feed-outline',
 	career: 'mdi:business-outline',
-	qrCode: 'bx:qr'
+	qrCode: 'bx:qr',
+	github: 'mdi:github'
 };
