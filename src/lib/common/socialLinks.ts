@@ -33,7 +33,7 @@ export const socialLinks = [
 	},
 	{
 		label: 'GitHub',
-		url: 'https://aiacuone-portfolio.netlify.app/',
+		url: 'https://daid-portfolio.netlify.app/',
 		icon: icons.github
 	}
 ];
